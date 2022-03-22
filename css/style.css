@@ -8,11 +8,23 @@
 html {
      font-family: 'Montserrat', sans-serif ;
      font-size: 100%;
+     background-color: black;
 }
 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* common */
 a {
     text-decoration: none;
     color: inherit;
+}
+
+ul {
+    list-style: none;
 }
 
 a:hover {
@@ -29,13 +41,10 @@ img {
     clear: both;
 }
 
-/* common */
 .container {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    /* test */
-    background-color: blueviolet;
 }
 
 /* main */
@@ -45,14 +54,13 @@ main {
     width: 100%;
     height: calc(100% - 100px);
     overflow: hidden;
-    /* test */
-    background-color: yellow;
   
 }
 
 .logo img{
     width: 70%;
-    margin-bottom: 1.8em;
+    margin-bottom: 0.8em;
+    margin-left: 0.8em;
 }
 
 @media screen and (max-width:600px) {
@@ -67,8 +75,6 @@ main {
     float: left;
     width: 200px;
     height: 100%;
-    /* test */
-    background-color: brown;
 }
 
 @media screen and (max-width:600px) {
@@ -77,18 +83,16 @@ main {
     }
 }
 
+/* sidebar-top */
 .sidebar-top {
     display: flex;
     flex-direction: column;
     height: calc(100% - 80px);
     min-height: 350px;
-    /* test */
-    background-color: khaki;
 }
 
 .logo {
     height: 80px;
-    background-color: bisque;
     display: flex;
     align-content: flex-end;
 }
@@ -135,7 +139,7 @@ main {
 .playlist {
     height: calc(100% - 230px);
     overflow-y: auto;
-    background-color: orange;
+    background-color: black;
 }
 
 .playlist-list {
@@ -170,24 +174,59 @@ main {
     margin-left: 0.5em;
 }
 
-.text-add-new {
-    font-size: large;
+.text-playlist {
+    font-weight: bold;
+    color:#a5a5a5;
 }
 
-ul {
-    list-style: none;
+.text-add-new {
+    font-size: large;
+    color: #a5a5a5;
+    font-weight: bold;
 }
+
 
 li {
     margin: 1.3em 0;
 }
 
-.sider-bottom {
+/* sider bottom */
+
+.sidebar-bottom {
     height: 80px;
-    /* test; */
-    background-color: aqua;
 }
 
+.app {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: .4em 0;
+    padding-bottom: .5em;
+    border-bottom: 1px solid #6a6a6a;
+}
+
+.app img {
+    width: 20px;
+    margin-right: .5em;
+}
+
+.user-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 700;
+    color: white;
+    margin: 0.5em 0.5em;
+}
+
+.user-name img{
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    background-color: grey;
+}
+
+/* content */
 .content {
     float: left;
     width: calc(100% - 200px);
@@ -197,6 +236,7 @@ li {
     /* test */
     background-color: lightcoral;
 }
+
 
  .content-cta {
     position: fixed;
