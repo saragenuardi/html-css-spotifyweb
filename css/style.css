@@ -357,6 +357,12 @@ li {
     margin-right: 15px;
 }
 
+/* 3 row */
+
+.a-radius img {
+    border-radius: 50%;
+}
+
 /* footer */
 footer {
     width: 100%;
