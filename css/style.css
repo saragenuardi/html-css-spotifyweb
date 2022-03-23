@@ -57,38 +57,24 @@ main {
   
 }
 
+.logo-mobile {
+    display: none;
+}
+
 .logo img{
     width: 70%;
     margin-bottom: 0.8em;
     margin-left: 0.8em;
 }
 
-@media screen and (max-width:600px) {
-    .logo{
-        display: none;
+.logo-mobile img {
+    width: 55%;
     }
-
-    .logo-mobile {
-        display: inline-block;
-        text-align: center;
-        padding: 5px 0 16px;
-    }
-    
-    .logo-mobile img {
-        width: 55%;
-    }
-}
 
 .sidebar {
     float: left;
     width: 200px;
     height: 100%;
-}
-
-@media screen and (max-width:600px) {
-    .sidebar{
-    width: 80px;
-    }
 }
 
 /* sidebar-top */
@@ -103,9 +89,7 @@ main {
   padding: 20px 10px 5px;
 }
 
-.logo-mobile {
-    display: none;
-}
+
 
 .menu {
     height: 150px;
@@ -140,7 +124,11 @@ main {
     color:#808080 ;
 }
 
-.text-sidebar:hover {
+.list-menu a:hover{
+    color: white;
+}
+
+.icon-size-sidebar:hover {
     color: white;
 }
 
@@ -277,15 +265,6 @@ li {
     align-items: center;
 }
 
-@media  screen and (max-width: 600px) {
-    .content {
-        width: calc(100% - 80px);
-    }
-
-    .content-cta {
-        width: calc(100% - 80px);
-    }
-}
 
 .upgrade-btn a {
     border: 2px solid #a3a2a5;
@@ -338,13 +317,6 @@ li {
     margin-right: 15px;
 }
 
-
-@media screen and (max-width: 1100px) {
-    .albums-card {
-        width: calc(100% / 4 - 15px);
-    }
-}
-
 /* 2 row */
 
 .tx-descr {
@@ -375,5 +347,135 @@ footer {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 100%
+    height: 100%;
+    background-color: red;
+}
+
+/* album */
+
+
+.album {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 1em;
+    width: 250px;
+    background-color: khaki;
+}
+
+.album img{
+    width: 50px;
+}
+
+.album i {
+    font-size: 25px;
+    color: #8d8d8d;
+}
+
+.current-name {
+    font-weight: 700;
+    color: white;
+}
+
+.current-sub {
+    font-size: small;
+    font-weight: 700;
+    color: #6a6a6a;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    width: 15%;
+}
+
+.icon i {
+    margin-right: .5em;
+}
+
+.icon i:hover {
+    color: white;
+}
+
+
+/* /album */
+.controls {
+    width: 35%;
+    height: 100%;
+    background-color: aqua;
+}
+
+.audio{
+    width: 250px;
+    height: 100%;
+    background-color: pink;
+
+}
+
+
+/* media screen */
+@media screen and (max-width:600px) {
+    .logo{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+     .logo-mobile {
+    display: block;
+    text-align: center;
+    padding: 5px 0 16px;
+    } 
+}
+
+@media screen and (max-width:600px) {
+    .sidebar{
+    width: 80px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .list-menu {
+        text-align: center;
+    }
+
+    .list-menu a {
+        border: 0;
+    }
+
+    .list-menu span {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .playlist {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .albums-card {
+        width: calc(100% / 4 - 15px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .app span,
+    .user-name span,
+    .app {
+        display: none;
+    }
+}
+
+@media  screen and (max-width: 600px) {
+    .content {
+        width: calc(100% - 80px);
+    }
+
+    .content-cta {
+        width: calc(100% - 80px);
+    }
 }
