@@ -118,7 +118,7 @@ main {
 }
 
 .text-sidebar {
-    font-size: 1em;
+    font-size: 100%;
     font-weight: bold;
     margin-left: 0.2em;
     color:#808080 ;
@@ -206,6 +206,7 @@ li {
 .app img {
     width: 20px;
     margin-right: .5em;
+    margin-left: 0.5em;
 }
 
 .user-name {
@@ -442,6 +443,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-top: 0.5em;
     margin-bottom: 1em;
 }
 
@@ -471,6 +473,7 @@ footer {
     flex-direction: row;
     width: 100%;
     height: 25px;
+    margin-top: -2.5em;
 
 }
 
@@ -578,7 +581,9 @@ footer {
 /* /audio */
 
 
-/* media screen */
+/* MEDIA SCREEN */
+
+/* m-s logo */
 @media screen and (max-width:600px) {
     .logo{
         display: none;
@@ -589,13 +594,14 @@ footer {
      .logo-mobile {
     display: block;
     text-align: center;
-    padding: 12px 0 8px;
+    padding: 12px 13px 8px;
     } 
 }
 
+/* m-s sidebar */
 @media screen and (max-width:600px) {
-    .sidebar{
-    width: 80px;
+    .sidebar {
+    width: 50px;
     }
 }
 
@@ -621,6 +627,29 @@ footer {
     }
 }
 
+@media screen and (max-width: 600px) {
+    .app span,
+    .user span
+     {
+        display: none;
+    }
+
+
+
+    .user {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .app img {
+        width: 20px;
+        margin-right: 1em;
+    }
+}
+
+/* m-s main */
+
 @media screen and (max-width: 1100px) {
     .albums-card {
         width: calc(100% / 4 - 15px);
@@ -628,12 +657,26 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-    .app span,
-    .user-name span,
-    .app {
-        display: none;
+    .albums-card {
+        width: calc(100% / 2 - 15px);
     }
 }
+
+@media screen and (max-width: 1100px) {  
+    .albums-created {
+    width: calc(52% / 2 - 15px);
+    margin-right: 15px;
+    }
+}
+
+@media screen and (max-width: 600px) {  
+    .albums-created {
+    width: calc(100% / 2 - 15px);
+    margin-right: 15px;
+    }
+}
+
+
 
 @media  screen and (max-width: 600px) {
     .content {
