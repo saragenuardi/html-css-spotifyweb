@@ -68,7 +68,7 @@ main {
 }
 
 .logo-mobile img {
-    width: ;
+    width: 30px;
     }
 
 .sidebar {
@@ -256,8 +256,8 @@ li {
  .content-cta {
     position: fixed;
     top: 0;
-    right: 0;
-    width: calc(100% - 200px);
+    right: 20px;
+    width: calc(100% - 220px);
     height: 100px;
     background-color: rgba(0, 0, 0, 0.4);
     display: flex;
@@ -317,6 +317,17 @@ li {
     margin-right: 15px;
 }
 
+.albums .albums-card {
+    position: relative;
+}
+
+.albums .albums-card .info-song {
+    position:absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
 /* 2 row */
 
 .tx-descr {
@@ -340,7 +351,7 @@ footer {
     width: 100%;
     height: 100px;
     /* test */
-    background-color: blue;
+    background-color: #313131;
 }
 
 .player {
@@ -348,7 +359,6 @@ footer {
     justify-content: space-between;
     width: 100%;
     height: 100%;
-    background-color: red;
 }
 
 /* album */
@@ -359,7 +369,6 @@ footer {
     justify-content: space-around;
     margin-left: 1em;
     width: 250px;
-    background-color: khaki;
 }
 
 .album img{
@@ -406,7 +415,6 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     width: 30%;
-    background-color: aqua;
 }
 .icon-music-bar {
     width: 200px;
@@ -498,7 +506,6 @@ footer {
     width: 250px;
     height: 100px;
     color: white;
-    background-color: pink;
 }
 
 #volume-bar {
@@ -547,7 +554,7 @@ footer {
 #volume-bar:hover .range-vol {
     display: inline-block;
 }
-/* audio */
+/* /audio */
 
 
 /* media screen */
@@ -561,7 +568,7 @@ footer {
      .logo-mobile {
     display: block;
     text-align: center;
-    padding: 5px 0 16px;
+    padding: 12px 0 8px;
     } 
 }
 
