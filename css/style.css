@@ -68,7 +68,7 @@ main {
 }
 
 .logo-mobile img {
-    width: 55%;
+    width: ;
     }
 
 .sidebar {
@@ -489,12 +489,65 @@ footer {
 
 /* /controls */
 
-.audio{
-    width: 250px;
-    height: 100%;
-    background-color: pink;
+/* audio */
 
+.audio {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 250px;
+    height: 100px;
+    color: white;
+    background-color: pink;
 }
+
+#volume-bar {
+    position: relative;
+    display: inline-block;
+    margin: 0 1em;
+    width: 120px;
+    height: 6px;
+    border: 1px solid #5f5f5f;
+    background-color: #5f5f5f;
+    border-radius: 5px;
+}
+
+.volume-progress {
+    position: absolute;
+    top: -1px;
+    left: -16px;
+    margin: 0 1em;
+    width: 30px;
+    height: 6px;
+    border: 1px solid #c4c4c4;
+    background-color: #c4c4c4;
+    border-radius: 5px;
+}
+
+#volume-bar:hover .volume-progress{
+    border: #91df1c;
+    background-color: #91df1c;
+}
+
+.volume {
+    display: flex;
+    align-items: center;
+}
+
+.range-vol {
+    display: none;
+    position: absolute;
+    top: -6px;
+    left: 20px;
+    border: 8px solid white;
+    background-color: white;
+    border-radius: 50%;
+}
+
+#volume-bar:hover .range-vol {
+    display: inline-block;
+}
+/* audio */
 
 
 /* media screen */
